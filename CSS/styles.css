@@ -99,6 +99,12 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   border-radius: 3px;
 }
 
+input[name="user_zip"] {
+  max-width: 150px;
+}
+
+select:focus,
+textarea:focus,
 input:focus {
   border: 2px solid #272759;
 }
@@ -120,6 +126,10 @@ input:focus {
   margin-top: 0;
 }
 
+.newsletter legend {
+  font-size: 1.25em;
+}
+
 .newsletter label {
   margin-left: 10px;
 }
@@ -134,6 +144,59 @@ input:focus {
   background-color: #e3e3e3;
 }
 
-input[type="checkbox"] {
+textarea {
+  background-color: #e3e3e3;
+  border: 0;
+  width: 100%;
+  height: 130px;
+  border-radius: 4px;
+}
+
+input[type="button"] {
+  background-color: #23d6c4;
+  color: white;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+  font-size: .875em;
+  color: #b2b2b2;
+  margin-bottom: 200px;
+}
+
+/*
+
+---NEWSLETTER STYLES---
+
+*/
+
+@media (min-width: 760px) {
+  .wrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .contact-info input,
+  .contact-info select {
+    width: 76%;
+    position: relative;
+    left: 8em;
+  }
+
+  .contact-info label {
+    position: relative;
+    top: 2.7em;
+  }
+
+  .border,
+  .newsletter-border {
+    margin: auto;
+  }
 
 }
