@@ -119,9 +119,6 @@ input:focus {
   margin-right: 3%;
 }
 
-.newsletter p {
-  margin-left: 5px;
-}
 .small-margin {
   margin-top: 0;
 }
@@ -142,6 +139,11 @@ input:focus {
 .newsletter input[type="radio"]:checked {
   border: 1px solid #272759;
   background-color: #e3e3e3;
+}
+
+#comment_label {
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
 textarea {

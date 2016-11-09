@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>The Code Review</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="main-header">
@@ -39,9 +41,9 @@
       <input type="text" id="city" name="user_city"><br>
 
       <label for="states">State</label><br>
-      <select name="states" name="user_state"><br>
-        <optgroup>
-          <option value="">Choose State</option>
+      <select id="states" name="user_state">
+        <optgroup label="States">
+          <option  selected="" disabled="">Choose State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
           <option value="AZ">Arizona</option>
@@ -103,16 +105,17 @@
       <fieldset class="newsletter">
         <legend>Newsletter</legend><br>
         <p class="small-margin">Select the newsletters you would like to recieve</p>
-        <input type="checkbox" value="html_news" id="html"><label for="html">HTML News</label><br>
-        <input type="checkbox" value="css_news" id="css"><label for="css">CSS News</label><br>
-        <input type="checkbox" value="javascript_news" id="js"><label for="js">Javascript News</label><br>
+        <input type="checkbox" value="html_news" name="html_news" id="html"><label for="html">HTML News</label><br>
+        <input type="checkbox" value="css_news" name="css_news" id="css"><label for="css">CSS News</label><br>
+        <input type="checkbox" value="js_news" name="js_news" id="js"><label for="js">Javascript News</label><br>
         <p>Newsletter format</p>
-        <input type="radio" value="html_format" id="html_format"><label for="html_format">HTML</label><br>
-        <input type="radio" value="text_format" id="plain_format"><label for="plain_format">Plain Text</label>
-        <p>Other topics you'd like to hear about</p>
-        <textarea></textarea><br>
+        <input type="radio" value="html_format" name="html_format" id="html_format"><label for="html_format">HTML</label><br>
+        <input type="radio" value="text_format" name="plain_format" id="plain_format"><label for="plain_format">Plain Text</label><br>
+        <label id="comment_label" for="user_comment">Other topics you'd like to hear about</label>
+        <textarea id="user_comment" name="user_comment"></textarea><br>
         <input type="button" value="Sign Up" name="sign_up">
       </fieldset>
+    </form>
       <footer>
         <p>Copyright The Code Review</p>
       </footer>
